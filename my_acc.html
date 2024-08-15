@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body{
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+font-family: Rosemary;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=email]: focus {
+  border: 3px solid #555;
+}
+
+input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=date]:focus {
+  border: 3px solid #555;
+}
+input[type=Password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=Password]:focus {
+  border: 3px solid #555;
+}
+input[type=submit] {
+  background-color: #E30B5D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: powderblue;
+  color: black;
+}
+input[type=reset] {
+  background-color: #E30B5D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=rest]:hover {
+  background-color: powderblue;
+  color:#E30B5D;
+}
+
+body{
+background-image:url('bgc1.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+font-family: Rosemary;
+}
+
+
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+label{
+color:#E30B5D;
+font-size:24px;
+}
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #E30B5D;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  right: 0;
+  box-shadow: pink 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: white;
+  padding: 16px;
+  color: #E30B5D;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: white;
+  color: #E30B5D;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #E30B5D;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+.button {
+  background-color: #E30B5D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1 style="color:#E30B5D;">TO CREATE AN ACCOUNT</h1>
+<form name="myform" method="POST" action="s2.html" onsubmit="return validate();">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname">
+  <label for="Email">Email:</label>
+  <input type="email" id="Email" name="Email"><br>
+  <label for="DOB">Date of Birth:</label>
+  <input type="date" id="DOB" name="DOB">
+  <label for="Password1">Password:</label>
+  <input type="password" id="Password1" name="Password"><br>
+  <label for="Password2">Confirm Password:</label>
+  <input type="password" id="Password2" name="Password2"><br>
+  <a href="rform.php"><input type="submit" value="create an account"></a><br>
+  <br><br><input type="reset" value="Reset">
+</form>
+
+<script>
+function submit() {
+  alert("Account creation Successful!...");
+}
+
+function validate() {
+  let a = document.forms["myform"]["fname"].value;
+  let b = document.forms["myform"]["lname"].value;
+  let c = document.forms["myform"]["Password1"].value;
+  let d = document.forms["myform"]["Password2"].value;
+
+  if (a === "") {
+    alert("Enter your first name");
+    return false;
+  }
+
+  if (b === "") {
+    alert("Enter your last name");
+    return false;
+  }
+
+  if (c.length < 8) {
+    alert("Password must be at least 8 characters");
+    return false;
+  }
+
+  if (c !== d) {
+    alert("Passwords should match");
+    return false;
+  }
+}
+</script>
+
+</body>
+</html>
